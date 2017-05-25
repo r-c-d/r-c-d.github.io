@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1023px) {
+    #idMenuLarge {
+    	display:none;
+    }
+    #idMenuSmall {
+    	display:block;
+    }
+    #idOptionBG {
+		 height:65px;width:100%;
+		 background-color:#e9e9e9;
+		 padding-top:20px;
+		 box-sizing:border-box;
+	}
+	#isNavTopBar{
+		height:36px;
+		background:#e9e9e9;
+		background-image:none;
+	}
+	#idNavLogo {
+		margin-left:20px;
+	}
+	#idContentContainer {
+		margin-top:120px;
+	}
+	.clsCardBottomLine {
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+    #idMenuLarge {
+    	display:block;
+    }
+    #idMenuSmall {
+    	display:none;
+    }
+    #isNavTopBar {
+		height:36px;
+		background:#497329;
+		background-image:url('http://irri.org/templates/yoo_infinite/images/headerbg.jpg');
+	}
+	#idNavContainer { /* ADDED TO KEEP MENU ON LEFT WHEN VIEWPORT IS MARGE */
+		padding-left:5%;width:100%;float:left;
+	}
+	.clsCardBottomLine {
+		visibility: hidden;
+	}
+}
+
+body {
+	margin:0;
+}
+
+#idNavContainer {
+	width:100%;max-width:1100px;margin:auto;margin-top:-72px;
+}
+
+#idNavTopSpacer {
+	height:36px;
+	background-color:#E9E9E9;
+}
+
+#idNav {
+	font-family:'Open Sans';
+	color:#707070;
+	font-size:15px;
+	margin:auto;
+	z-index:9999;
+	/* CODE MAKES NAV FIXED */
+	position:relative;border:0px solid #ff0000;position:fixed;width:100%;height:72px;
+	/* CODE MAKES NAV FIXED */
+}
+
+#idNavLogo {
+	background-image:url('http://irri.org/images/IRRI-logo.png');
+	float:left;
+	background-color:#005080;
+	height:80px;
+	width:100px;
+}
+
+#idNavMenu {
+	border:0px solid #ff0000;
+	background-color:#e9e9e9;/*497329*/
+	height:36px;
+	margin-top:0;
+	margin-left:0;
+	box-sizing:border-box;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+#idMenuLarge {
+	margin:0;
+}
+
+#idMenuLarge>li {
+	float:left;
+	margin:0;
+	padding:8px 15px 8px;
+	position:relative;
+	/*border:1px solid #0000ff;*/
+}
+
+#idMenuLarge li:hover {
+	cursor:pointer;
+	background-color:#497329;
+	color:#ffffff;
+}
+
+#idMenuSmall {
+	width:88%;
+	padding:6px;
+	margin:0 auto 20px;
+}
+
+#idGrayBar {
+	height:36px;
+}
+
+.clsHasSub ul {
+	display:none;
+}
+
+.clsHasSub ul li {
+	padding:0 10px;
+	font-size:14px;
+}
+
+.clsHasSub:hover {
+	cursor:default!important;
+}
+
+.clsHasSub:hover ul {
+	width:200px;
+	display:block;
+	position:absolute;
+	background-color:#497329;
+	padding: 10px 15px 10px;
+	margin-top:8px;
+	margin-left:-15px;
+}
+
+.clsHasSub:hover ul li {
+	padding:10px 0;
+	border-bottom:1px solid #64894A;
+}
+
+.clsHasSub:hover ul li:last-child {
+	border-bottom:0px solid #64894A;
+}
+
+.clsHasSub>ul>li:hover {
+	color:#C1CCBA!important;
+}
+

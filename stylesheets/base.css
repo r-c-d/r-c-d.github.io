@@ -1,0 +1,124 @@
+* {
+	font-family:'Open Sans','sans serif';
+
+	text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p{
+	text-align:justify;
+}
+
+h1{
+	font-size:80px;
+}
+
+h2{
+	font-size:35px;
+}
+
+h3{
+	font-size:30px;
+}
+
+h4{
+	font-size:28px;
+}
+
+h5{
+	font-size:18px;
+}
+
+.clsFontLight {
+	font-weight:300;
+}
+
+.clsFontRegular {
+	font-weight:400;
+}
+
+.clsFontHeavy {
+	font-weight:700;
+}
+
+.clsFontCenterH {
+	text-align:center;
+}
+
+.clsBoxShadowBottom {
+	box-shadow: 0 5px 10px -2px #393939;
+}
+
+#idContentContainer {
+	/* CODE ADDED WHEN NAV FIXED */
+	margin-top:72px;
+	/* CODE ADDED WHEN NAV FIXED */
+}
+
+.clsIsButton {
+	display:inline;
+	padding:10px 25px;
+	background-color:#73b81f;
+	color:#ffffff;
+	line-height:18px;
+
+	position: relative;
+	-webkit-transition: all 150ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 150ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 150ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 150ms ease-in;
+    transform: scale(1);
+}
+
+.clsIsButton:hover {
+	cursor:pointer;
+
+	font-size:18px;
+	background-color:#F68D2E;
+	/*box-shadow: 0 0 16px 4px #cdcdcd;*/
+}
+
+
+.clsIsIconButton {
+	position: relative;
+	-webkit-transition: all 150ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 150ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 150ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 150ms ease-in;
+    transform: scale(1);
+}
+
+.clsIsIconButton:hover {
+	cursor:pointer;
+
+	font-size:125px;
+	/*text-shadow: 0 0 16px #adadad;*/
+}
+
+.clsGradientGreen {
+  background: #4A5C69; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #5F921C, #AFC836); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5F921C, #AFC836); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5F921C, #AFC836); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5F921C, #AFC836); /* Standard syntax */
+}
+
+.clsGradientGrey {
+  background: #4A5C69; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #6C7A82, #a6b2bA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #6C7A82, #a6b2bA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #6C7A82, #a6b2bA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #6C7A82, #a6b2bA); /* Standard syntax */
+}
