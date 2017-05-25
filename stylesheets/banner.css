@@ -11,7 +11,7 @@ body {
 	position:absolute;
 	border: 0 solid red;
 	box-sizing:border-box;
-	background-image:url('banner.jpg');
+	background-image:url('https://r-c-d.github.io/banner.jpg');
 	background-size:cover;
 	background-position:center center;
 }
