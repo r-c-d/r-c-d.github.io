@@ -14,7 +14,7 @@
 	#isNavTopBar{
 		height:36px;
 		background-color:#e9e9e9;
-		background-image:none;
+		background-image:url('http://irri.org/templates/yoo_infinite/images/grey-bg.png');
 	}
 	#idNavLogo {
 		margin-left:20px;
