@@ -19,7 +19,7 @@
 	#idNavLogo {
 		margin-left:20px;
 	}
-	#idContentContainer {
+	#idContentContainer, #idContentContainerSubPage {
 		margin-top:120px;
 	}
 	.clsCardBottomLine {

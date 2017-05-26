@@ -15,3 +15,14 @@ body {
 	background-size:cover;
 	background-position:center center;
 }
+
+#idContentContainerSubPage {
+	height: 35%;
+	width: 100%;
+	position:absolute;
+	border: 0 solid red;
+	box-sizing:border-box;
+	background-image:url('https://r-c-d.github.io/basic-needs-banner.jpg');
+	background-size:cover;
+	background-position:center center;
+}
