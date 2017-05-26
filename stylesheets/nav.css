@@ -1,19 +1,20 @@
 @media only screen and (max-width: 1023px) {
-    #idMenuLarge {
-    	display:none;
-    }
-    #idMenuSmall {
-    	display:block;
-    }
-    #idOptionBG {
-		 height:65px;width:100%;
-		 background-color:#e9e9e9;
-		 padding-top:20px;
-		 box-sizing:border-box;
+	#idMenuLarge {
+		display:none;
+	}
+	#idMenuSmall {
+		display:block;
+	}
+	#idOptionBG {
+		height:65px;width:100%;
+		background-color:#e9e9e9;
+		padding-top:20px;
+		box-sizing:border-box;
 	}
 	#isNavTopBar{
 		height:36px;
 		background-color:#e9e9e9;
+		background-image:none;
 	}
 	#idNavLogo {
 		margin-left:20px;
@@ -35,7 +36,7 @@
     }
     #isNavTopBar {
 		height:36px;
-		background:#497329;
+		background-color:#e9e9e9;/*497329*/
 		/*background-image:url('http://irri.org/templates/yoo_infinite/images/headerbg.jpg');*/
 		
 	}
@@ -74,7 +75,7 @@ body {
 #idNavLogo {
 	/*background-image:url('http://irri.org/images/IRRI-logo.png');*/
 	float:left;
-	background-color:#005080;
+	background-color:#216438;
 	height:80px;
 	width:100px;
 }
