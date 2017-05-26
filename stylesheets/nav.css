@@ -37,7 +37,8 @@
     #isNavTopBar {
 		height:36px;
 		background:#497329;
-		background-image:url('http://irri.org/templates/yoo_infinite/images/headerbg.jpg');
+		/*background-image:url('http://irri.org/templates/yoo_infinite/images/headerbg.jpg');*/
+		
 	}
 	#idNavContainer { /* ADDED TO KEEP MENU ON LEFT WHEN VIEWPORT IS MARGE */
 		padding-left:5%;width:100%;float:left;
@@ -72,7 +73,7 @@ body {
 }
 
 #idNavLogo {
-	background-image:url('http://irri.org/images/IRRI-logo.png');
+	/*background-image:url('http://irri.org/images/IRRI-logo.png');*/
 	float:left;
 	background-color:#005080;
 	height:80px;
