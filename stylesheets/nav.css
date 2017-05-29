@@ -95,15 +95,6 @@ ul li {
 
 #idMenuLarge {
 	margin:0;
-
-	-webkit-transition: all 250ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 250ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 250ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 250ms ease-in;
-    transform: scale(1);
 }
 
 #idMenuLarge>li {
@@ -112,12 +103,6 @@ ul li {
 	padding:8px 15px 8px;
 	position:relative;
 	/*border:1px solid #0000ff;*/
-}
-
-#idMenuLarge li:hover {
-	cursor:pointer;
-	background-color:#497329;
-	color:#ffffff;
 
 	-webkit-transition: all 250ms ease-in;
     -webkit-transform: scale(1); 
@@ -127,6 +112,12 @@ ul li {
     -moz-transform: scale(1);
     transition: all 250ms ease-in;
     transform: scale(1);
+}
+
+#idMenuLarge li:hover {
+	cursor:pointer;
+	background-color:#497329;
+	color:#ffffff;
 }
 
 #idMenuSmall {
