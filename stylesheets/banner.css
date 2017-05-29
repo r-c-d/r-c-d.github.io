@@ -11,7 +11,7 @@ body {
 	position:absolute;
 	border: 0 solid red;
 	box-sizing:border-box;
-	background-image:url('https://r-c-d.github.io/banner.jpg');
+	background-image:url('https://c1.staticflickr.com/5/4226/34570449470_1b1a1062af_o.jpg');/* https://r-c-d.github.io/banner.jpg */
 	background-size:cover;
 	background-position:center center;
 }
@@ -22,7 +22,7 @@ body {
 	position:absolute;
 	border: 0 solid red;
 	box-sizing:border-box;
-	background-image:url('https://r-c-d.github.io/basic-needs-banner.jpg');
+	background-image:url('https://c1.staticflickr.com/5/4269/34793898472_d61e0d9f9d_o.jpg');/*https://r-c-d.github.io/basic-needs-banner.jpg*/
 	background-size:cover;
 	background-position:center center;
 }
