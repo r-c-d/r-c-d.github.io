@@ -26,3 +26,23 @@ body {
 	background-size:cover;
 	background-position:center center;
 }
+
+@media only screen and (max-width: 1023px) {
+	#idContentContainer {
+		height: 250px;
+	}
+
+	#idContentContainerSubPage {
+		height: 250px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+    #idContentContainer {
+		height: 55%;
+	}
+
+	#idContentContainerSubPage {
+		height: 35%;
+	}
+}
