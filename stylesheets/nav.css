@@ -158,6 +158,9 @@ ul li {
 }
 
 .clsExternalNav {
-	color:#fff;text-decoration:none;
+	color:#f7f7f7;text-decoration:none;
 }
 
+.clsExternalNav:hover {
+	color:#fff;
+}
