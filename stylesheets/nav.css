@@ -104,14 +104,14 @@ ul li {
 	position:relative;
 	/*border:1px solid #0000ff;*/
 
-	-webkit-transition: all 150ms ease-in;
-	-webkit-transform: scale(1); 
-	-ms-transition: all 150ms ease-in;
-	-ms-transform: scale(1); 
-	-moz-transition: all 150ms ease-in;
-	-moz-transform: scale(1);
-	transition: all 150ms ease-in;
-	transform: scale(1);
+	-webkit-transition: all 250ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 250ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 250ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 250ms ease-in;
+    transform: scale(1);
 }
 
 #idMenuLarge li:hover {
@@ -168,4 +168,5 @@ ul li {
 
 .clsExternalNav {
 	color:#f7f7f7;text-decoration:none;
+	padding-left:7px;padding-right:7px;
 }
