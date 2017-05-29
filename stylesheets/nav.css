@@ -96,14 +96,13 @@ ul li {
 #idMenuLarge {
 	margin:0;
 
-	position: relative;
-	-webkit-transition: all 150ms ease-in;
+	-webkit-transition: all 250ms ease-in;
     -webkit-transform: scale(1); 
-    -ms-transition: all 150ms ease-in;
+    -ms-transition: all 250ms ease-in;
     -ms-transform: scale(1); 
-    -moz-transition: all 150ms ease-in;
+    -moz-transition: all 250ms ease-in;
     -moz-transform: scale(1);
-    transition: all 150ms ease-in;
+    transition: all 250ms ease-in;
     transform: scale(1);
 }
 
@@ -119,6 +118,15 @@ ul li {
 	cursor:pointer;
 	background-color:#497329;
 	color:#ffffff;
+
+	-webkit-transition: all 250ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 250ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 250ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 250ms ease-in;
+    transform: scale(1);
 }
 
 #idMenuSmall {
