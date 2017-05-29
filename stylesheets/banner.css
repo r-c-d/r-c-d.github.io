@@ -1,3 +1,23 @@
+@media only screen and (max-width: 1023px) {
+	#idContentContainer {
+		height: 250px;
+	}
+
+	#idContentContainerSubPage {
+		height: 250px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+    #idContentContainer {
+		height: 55%;
+	}
+
+	#idContentContainerSubPage {
+		height: 35%;
+	}
+}
+
 body {
 	font-family: 'Noto Sans', sans-serif;
 	margin: 0 auto;
@@ -25,24 +45,4 @@ body {
 	background-image:url('https://c1.staticflickr.com/5/4269/34793898472_d61e0d9f9d_o.jpg');/*https://r-c-d.github.io/basic-needs-banner.jpg*/
 	background-size:cover;
 	background-position:center center;
-}
-
-@media only screen and (max-width: 1023px) {
-	#idContentContainer {
-		height: 250px;
-	}
-
-	#idContentContainerSubPage {
-		height: 250px;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-    #idContentContainer {
-		height: 55%;
-	}
-
-	#idContentContainerSubPage {
-		height: 35%;
-	}
 }
