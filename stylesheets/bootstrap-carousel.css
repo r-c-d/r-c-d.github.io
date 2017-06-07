@@ -185,7 +185,7 @@ a {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 5px;
+  bottom: 20px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -203,8 +203,11 @@ a {
   border: 1px solid #ffffff;
   border-radius: 10px;
   cursor: pointer;
+  /*
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
+  */
+  background-color: #636363;
 }
 .carousel-indicators .active {
   margin: 0;
