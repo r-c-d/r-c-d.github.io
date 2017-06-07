@@ -196,9 +196,9 @@ a {
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
   text-indent: -999px;
   border: 1px solid #ffffff;
   border-radius: 10px;
