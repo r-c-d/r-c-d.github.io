@@ -185,7 +185,7 @@ a {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -213,7 +213,7 @@ a {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
+  background-color: #ffffff \9;
 }
 .carousel-caption {
   position: absolute;
