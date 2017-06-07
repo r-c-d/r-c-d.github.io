@@ -198,7 +198,7 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin: 1px;
+  margin: 1px 5px;
   text-indent: -999px;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -210,7 +210,7 @@ a {
   background-color: #636363;
 }
 .carousel-indicators .active {
-  margin: 0;
+  margin: 0 4px;
   width: 17px;
   height: 17px;
   background-color: #ffffff;
