@@ -110,7 +110,7 @@ a {
 .carousel-control {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 40px;
   bottom: 0;
   width: 3%;
   opacity: 0.5;
