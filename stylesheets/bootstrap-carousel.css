@@ -192,7 +192,7 @@ a {
   margin-left: -30%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
+  text-align: center;border:1px solid #ff0000;
 }
 .carousel-indicators li {
   display: inline-block;
