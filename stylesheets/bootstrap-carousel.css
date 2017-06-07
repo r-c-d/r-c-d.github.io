@@ -192,7 +192,7 @@ a {
   margin-left: -30%;
   padding-left: 0;
   list-style: none;
-  text-align: center;border:1px solid #ff0000;
+  text-align: center;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -204,7 +204,7 @@ a {
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);border:1px solid #ff0000;
 }
 .carousel-indicators .active {
   margin: 0;
