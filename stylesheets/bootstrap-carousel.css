@@ -195,7 +195,7 @@ a {
   text-align: center;
 }
 .carousel-indicators ul {
-  border:1px solid #ff0000;
+  border:1px solid #ff0000;background-color:#ff0000;
 }
 .carousel-indicators li {
   display: inline-block;
