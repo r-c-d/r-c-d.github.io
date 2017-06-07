@@ -185,7 +185,7 @@ a {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: -20px;
+  bottom: 5px;
   left: 50%;
   z-index: 15;
   width: 60%;
