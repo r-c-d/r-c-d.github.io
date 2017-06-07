@@ -211,8 +211,8 @@ a {
 }
 .carousel-indicators .active {
   margin: 0;
-  width: 12px;
-  height: 12px;
+  width: 17px;
+  height: 17px;
   background-color: #ffffff;
 }
 .carousel-caption {
