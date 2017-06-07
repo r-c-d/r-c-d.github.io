@@ -194,6 +194,9 @@ a {
   list-style: none;
   text-align: center;
 }
+.carousel-indicators ul {
+  border:1px solid #ff0000;
+}
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -204,7 +207,7 @@ a {
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);bottom:10px;
+  background-color: rgba(0, 0, 0, 0);
 }
 .carousel-indicators .active {
   margin: 0;
