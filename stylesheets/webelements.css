@@ -3,9 +3,10 @@
 
 /* LARGE */
 .clsBtnLarge {
+	font-family:'Open Sans','Sans Serif',Verdana;
 	text-shadow: none;
 	line-height:24px;
-  	font-size:14px;
+  	font-size:16px;
   	/* background-color: #73b81f;
   	border:1px solid #53981d;   -- IS GREEN */
   	background-color: #4285f4;
