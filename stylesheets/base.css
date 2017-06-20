@@ -109,10 +109,10 @@ h5{
 
 .clsGradientGreen {
   background: #4A5C69; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #5F921C, #AFC836); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #5F921C, #AFC836); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #5F921C, #AFC836); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #5F921C, #AFC836); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #6BC138, #8DE35A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #6BC138, #8DE35A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #6BC138, #8DE35A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #6BC138, #8DE35A); /* Standard syntax */
 }
 
 .clsGradientGrey {
