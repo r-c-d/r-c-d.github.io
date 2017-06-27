@@ -50,6 +50,10 @@ h5{
 	float:left;
 }
 
+.clsTextAlignLeft {
+	text-align:left;
+}
+
 .clsFontLight {
 	font-weight:300;
 }
