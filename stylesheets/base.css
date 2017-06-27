@@ -84,7 +84,7 @@ h5{
 	/* CODE ADDED WHEN NAV FIXED */
 }
 
-.clsIsButton {
+.clsIsButton, .clsIsButton2 {
 	display:inline;
 	padding:10px 25px;
 	/*background-color:#73b81f;*/
@@ -107,6 +107,13 @@ h5{
 	cursor:pointer;
 
 	font-size:18px;
+	background-color:#F68D2E;
+	/*box-shadow: 0 0 16px 4px #cdcdcd;*/
+}
+
+.clsIsButton2:hover {
+	cursor:pointer;
+
 	background-color:#F68D2E;
 	/*box-shadow: 0 0 16px 4px #cdcdcd;*/
 }
