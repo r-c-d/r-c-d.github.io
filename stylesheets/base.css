@@ -74,6 +74,10 @@ h5{
 	box-shadow: 0 5px 10px -2px #393939;
 }
 
+.clsCenteringDiv {
+	width:100%;max-width:1100px;margin:auto;
+}
+
 #idContentContainer, #idContentContainerSubPage {
 	/* CODE ADDED WHEN NAV FIXED */
 	margin-top:72px;
