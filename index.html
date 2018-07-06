@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+<!-- python -m http.server 8000 -->
 <html>
   <head>
-    <title>Google Sheets API Quickstart</title>
+    <title>Read Data from Unshared Googlesheet</title>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+      *{
+        font-family: 'Open Sans';
+      }
+    </style>
   </head>
   <body>
-    <p>Google Sheets API Quickstart</p>
+    <h2>Read Data from Unshared Googlesheet</h2>
+    <p>Googlesheet read from: <a href="https://docs.google.com/spreadsheets/d/1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8/edit#gid=0" target="_blank">https://docs.google.com/spreadsheets/d/1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8/edit#gid=0</a></p>
+    <p>Place this HTML file in a directory. Include the 'client_secret.json' file in the same directory.<br>
+      Open a console and navigate to the directory. Run the command '$ python -m http.server 8000' from in the directory to simulate a server.<br>
+      Open 'http://localhost:8000/' in a browser.<br>
+      Click 'Sign in to fetch data' button.</p>
 
     <!--Add buttons to initiate auth sequence and sign out-->
-    <button class="isButton" id="authorize_button" style="display: nnone;">Authorize</button>
-    <button class="isButton" id="signout_button" style="display: nnone;">Sign Out</button>
+    <button class="isButton" id="authorize_button" style="display: none;">Sign In to fetch sample data</button>
+    <button class="isButton" id="signout_button" style="display: none;">Sign Out</button>
 
     <pre id="content"></pre>
 
@@ -23,7 +35,7 @@
 
       // Authorization scopes required by the API; multiple scopes can be
       // included, separated by spaces.
-      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";//https://www.googleapis.com/auth/userinfo.profile
 
       var authorizeButton = document.getElementById('authorize_button');
       var signoutButton = document.getElementById('signout_button');
@@ -103,17 +115,19 @@
        */
       function listMajors() {
         gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
-          range: 'Class Data!A2:E',
+          spreadsheetId: '1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8',//1FiNYqZIWoP5q3uxLcyMl67JTZ5q8MI9vvqBBNJKDmUE',//1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
+          range: 'UserInfo!A2:D2',
         }).then(function(response) {
           var range = response.result;
           if (range.values.length > 0) {
-            appendPre('Name, Major:');
-            for (i = 0; i < range.values.length; i++) {
-              var row = range.values[i];
-              // Print columns A and E, which correspond to indices 0 and 4.
-              appendPre(row[0] + ', ' + row[4]);
-            }
+            appendPre('Name:'+" "+range.values[0][1]+", "+range.values[0][0]);
+            appendPre('OU:'+" "+range.values[0][2]);
+            appendPre('RESNO:'+" "+range.values[0][3]);
+            // for (i = 0; i < range.values.length; i++) {
+            //   var row = range.values[i];
+            //   // Print columns A and E, which correspond to indices 0 and 4.
+            //   appendPre(row);
+            // }
           } else {
             appendPre('No data found.');
           }
@@ -121,6 +135,20 @@
           appendPre('Error: ' + response.result.error.message);
         });
       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
 
