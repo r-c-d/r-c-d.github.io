@@ -1,171 +1,78 @@
 <!DOCTYPE html>
-<!-- python -m http.server 8000 -->
-<html>
-  <head>
-    <title>Read Data from Unshared Googlesheet</title>
-    <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style type="text/css">
-      *{
-        font-family: 'Open Sans';
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Read Data from Unshared Googlesheet</h2>
-   <!--  <p>Googlesheet read from: <a href="https://docs.google.com/spreadsheets/d/1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8/edit#gid=0" target="_blank">https://docs.google.com/spreadsheets/d/1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8/edit#gid=0</a></p>
-    <p>Place this HTML file in a directory. Include the 'client_secret.json' file in the same directory.<br>
-      Open a console and navigate to the directory. Run the command '$ python -m http.server 8000' from in the directory to simulate a server.<br>
-      Open 'http://localhost:8000/' in a browser.<br>
-      Click 'Sign in to fetch data' button.</p> -->
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>r-c-d.github.io</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> -->
+	<link rel="stylesheet" type="text/css" href="https://r-c-d.github.io/stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="374769268599-p810hjq58v5luav4o54gn0h9e442oi2g.apps.googleusercontent.com">
+	
+	<script>
+		function codeAddress(){
+			document.getElementsByClassName('abcRioButtonContentWrapper').click();
+			onSignIn;
+		}
+		window.onload = codeAddress;
+		
+		function load(){
+		    window.location.href = "https://accounts.google.com/signin/oauth/oauthchooseaccount?client_id=374769268599-p810hjq58v5luav4o54gn0h9e442oi2g.apps.googleusercontent.com&as=AgGCpeiQmpYoZne89C0-wg&destination=http%3A%2F%2Fmyhr.irri.org&approval_state=!ChRqZ1RXaVBtTHRDeVV5S1BTWHlyQRIfNDFNeGRsOUFYSGdWNEJxcmlYbTVkb21DczJkVFJCWQ%E2%88%99AB8iHBUAAAAAWzXaUy8kIc9FXGAfN9G2hIk60wVXmnje&xsrfsig=AHgIfE9WRFTsHKDC2i2j7QNvYlNDh7No7w&flowName=GeneralOAuthFlow";
+		}
+	</script>
+</head>
+<body onload="load()">
+<!-- 	<div id="idTopBanner">r-c-d.github.io</div> -->
+	<div id="idTopBanner">Github Hosted Page</div>
+	<div class="clsContent">
+<!-- 		<h2>Sample Github Page</h2> -->
+		<h2>Sample Google Login</h2>
+<!-- 		<p>All resources located in and referenced from Github repo</p> -->
+		<!--
+		<p class="clsIsHex">01001110 01101111 01110100 00100000 01101101 01110101 01100011 01101000 00100000 01110100<br>01101111 00100000 01110011 01100101 01100101 00100000 01101000 01100101 01110010 01100101</p>
+		<p class="clsIsHex">4e 6f 74 20 6d 75 63 68 20 74 6f 20 73 65 65 20 68 65 72 65</p>
+		<p>Not much to see here</p>
+		<p>NMTSH</p>
+--->
+		
+<center>
+<style>
+	.abcRioButtonLightBlue{
+		background-color:#fefefe;border-radius:5px;
+	}
+	.abcRioButtonIcon{
+		padding-left:15px!important;
+	}
+</style>
+<div class="g-signin2"
+     data-onsuccess="onSignIn" 
+     data-scope="https://www.googleapis.com/auth/plus.login" 
+     data-accesstype="offline" 
+     data-redirecturi="http://myhr.irri.org"></div>
+</center>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button class="isButton" id="authorize_button" style="display:none;">Sign In to fetch sample data</button>
-    <button class="isButton" id="signout_button" style="display:none;">Sign Out</button>
+<!--		
+<div class="g-signin2" 
+   data-onsuccess="onSignIn"
+   data-scope="https://www.googleapis.com/auth/plus.login"
+   data-accesstype="offline"
+   data-redirecturi="https://www.example.com/redirect_uri"></div>
+-->	
+		
+<center>
+	<a href="#" onclick="signOut();" style="color:#ffffff;"><span style="font-size:12px;color:#ffffff;">Sign out.</span></a>
+		</center>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
 
-    <pre id="content"></pre>
-
-    <script type="text/javascript">
-      // Client ID and API key from the Developer Console SECRET:cbrTU3iun2p5EmYCki-VcdU6
-      var CLIENT_ID = '374769268599-p810hjq58v5luav4o54gn0h9e442oi2g.apps.googleusercontent.com';//374769268599-p810hjq58v5luav4o54gn0h9e442oi2g.apps.googleusercontent.com
-      var API_KEY = 'AIzaSyDHBnyxfdo6G0Cfnxh0o0yCxiQp4FmJG7c';//AIzaSyDK3ilJH5CvaZty48YxHRUtddlIewco68s
-
-      // Array of API discovery doc URLs for APIs used by the quickstart
-      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
-
-      // Authorization scopes required by the API; multiple scopes can be
-      // included, separated by spaces.
-      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";//https://www.googleapis.com/auth/userinfo.profile
-
-      var authorizeButton = document.getElementById('authorize_button');
-      var signoutButton = document.getElementById('signout_button');
-
-      /**
-       *  On load, called to load the auth2 library and API client library.
-       */
-      function handleClientLoad() {
-        gapi.load('client:auth2', initClient);
-        alert('handleClientLoad');
-      }
-
-      /**
-       *  Initializes the API client library and sets up sign-in state
-       *  listeners.
-       */
-      function initClient() {
-        gapi.client.init({
-          apiKey: API_KEY,
-          clientId: CLIENT_ID,
-          discoveryDocs: DISCOVERY_DOCS,
-          scope: SCOPES
-          alert('initClient-1');
-        }).then(function () {
-          // Listen for sign-in state changes.
-          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-
-          // Handle the initial sign-in state.
-          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-          authorizeButton.onclick = handleAuthClick;
-          signoutButton.onclick = handleSignoutClick;
-          alert('initClient-2');
-        });
-      }
-
-      /**
-       *  Called when the signed in status changes, to update the UI
-       *  appropriately. After a sign-in, the API is called.
-       */
-      function updateSigninStatus(isSignedIn) {
-        if (isSignedIn) {
-          authorizeButton.style.display = 'none';
-          signoutButton.style.display = 'block';
-          listMajors();
-          alert('updateSigninStatus-1');
-        } else {
-          authorizeButton.style.display = 'block';
-          signoutButton.style.display = 'none';
-          alert('updateSigninStatus-1');
-        }
-      }
-
-      /**
-       *  Sign in the user upon button click.
-       */
-      function handleAuthClick(event) {
-        alert('handleAuthClick');
-        gapi.auth2.getAuthInstance().signIn();
-      }
-
-      /**
-       *  Sign out the user upon button click.
-       */
-      function handleSignoutClick(event) {
-        gapi.auth2.getAuthInstance().signOut();
-        alert('handleSignoutClick');
-      }
-
-      /**
-       * Append a pre element to the body containing the given message
-       * as its text node. Used to display the results of the API call.
-       *
-       * @param {string} message Text to be placed in pre element.
-       */
-      function appendPre(message) {
-        var pre = document.getElementById('content');
-        var textContent = document.createTextNode(message + '\n');
-        pre.appendChild(textContent);
-        alert('appendPre');
-      }
-
-      /**https://r-c-d.github.io
-       * Print the names and majors of students in a sample spreadsheet:
-       * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-       */
-      function listMajors() {
-        document.getElementById('content').innerHTML="";
-        gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1LzsCyRJl5ORv16i3dOVQr4VQBrSYnmYGmY6HvEF7hy8',//1FiNYqZIWoP5q3uxLcyMl67JTZ5q8MI9vvqBBNJKDmUE',//1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
-          range: 'UserInfo!A2:D2',
-        }).then(function(response) {
-          var range = response.result;
-          if (range.values.length > 0) {
-            appendPre('Name:'+" "+range.values[0][1]+", "+range.values[0][0]);
-            appendPre('OU:'+" "+range.values[0][2]);
-            appendPre('RESNO:'+" "+range.values[0][3]);
-            // for (i = 0; i < range.values.length; i++) {
-            //   var row = range.values[i];
-            //   // Print columns A and E, which correspond to indices 0 and 4.
-            //   appendPre(row);
-            // }
-            alert('listMajors-1');
-          } else {
-            appendPre('No data found.');
-          }
-        }, function(response) {
-          appendPre('Error: ' + response.result.error.message);
-          alert('listMajors-2');
-        });
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-  </body>
-</html>
+	</div>
+</body>
