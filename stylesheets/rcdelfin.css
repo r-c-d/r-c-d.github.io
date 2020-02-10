@@ -1,0 +1,17 @@
+body {
+	background-color: #003366;
+}
+
+aside {
+	max-width:25%;
+	float:left;
+	padding:20px;
+	color:#fefefe;
+}
+
+section {
+	max-width: 75%;
+	margin-left: 25%;
+	padding:20px;
+	background-color: #fefefe;
+}
