@@ -7,13 +7,44 @@
 
 	section {
 		max-width: 100%;
-		padding:20px;
 		background-color: #fefefe;
 	}
 
 	#personalInfoName {
 		font-size:1.75em;
 		margin-bottom: 10px;
+	}
+
+	.sectionTitle {
+		font-size:1.5em;
+		margin-bottom: 10px;
+	}
+
+	#personalSummary {
+		background-color:#ececec;
+		padding:20px 20px 20px;
+	}
+
+	#professionalExperience, #educationalExperience, #professionalCertificates {
+		padding:20px 20px 20px;
+	}
+
+	.professionalExperienceWhere {
+		font-size: 1.2em;
+	}
+
+	.professionalExperienceDetails {
+		padding-bottom: 20px;
+		text-align: justify;
+	}
+
+	.professionalExperienceWhat {
+		font-size:1em;
+	}
+
+	.professionalExperienceWhen {
+		font-weight: 300;
+		padding-bottom:20px;
 	}
 
 	#personalInfoAddress, #personalInfoContactNum, #personalInfoEmail {
