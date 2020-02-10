@@ -21,7 +21,7 @@
 	}
 
 	#personalSummary {
-		background-color:#ececec;
+		background-color:#efefef;
 		padding:20px 20px 20px;
 	}
 
@@ -29,13 +29,15 @@
 		padding:20px 20px 20px;
 	}
 
-	.professionalExperienceWhere {
+	.professionalExperienceWhere, .educationalExperienceWhere, .professionalCertificatesWhat {
 		font-size: 1.2em;
 	}
 
-	.professionalExperienceDetails {
+	.professionalExperienceDetails, .educationalExperienceDetails, .sectionText {
 		padding-bottom: 20px;
 		text-align: justify;
+		color:#969696;
+		font-size:.95em;
 	}
 
 	.professionalExperienceWhat {
