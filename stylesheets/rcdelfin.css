@@ -97,6 +97,7 @@
 	header {
 		display: block;
 		color:#fefefe;
+		padding-top: 60px;
 		padding-bottom: 60px;
 		text-transform: uppercase;
 	}
