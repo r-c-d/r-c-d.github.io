@@ -1,17 +1,56 @@
+@media (max-width: 720px) {
+	aside {
+		max-width:100%;
+		padding:20px 20px 40px;
+		color:#fefefe;
+	}
+
+	section {
+		max-width: 100%;
+		padding:20px;
+		background-color: #fefefe;
+	}
+
+	#personalInfoName {
+		font-size:1.75em;
+		margin-bottom: 10px;
+	}
+
+	#personalInfoAddress, #personalInfoContactNum, #personalInfoEmail {
+		margin-bottom: 10px;
+		clear:both;
+	}
+
+	.personalInfoIcon {
+		width:30px;
+		float:left;
+		text-align: center;
+	}
+
+	.personalInfoValue {
+		float:left;
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 721px) {
+	aside {
+		max-width:25%;
+		float:left;
+		padding:20px;
+		color:#fefefe;
+	}
+
+	section {
+		max-width: 75%;
+		margin-left: 25%;
+		padding:20px;
+		background-color: #fefefe;
+	}
+}
+
 body {
 	background-color: #003366;
 }
 
-aside {
-	max-width:25%;
-	float:left;
-	padding:20px;
-	color:#fefefe;
-}
 
-section {
-	max-width: 75%;
-	margin-left: 25%;
-	padding:20px;
-	background-color: #fefefe;
-}
