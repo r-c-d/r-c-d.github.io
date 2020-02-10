@@ -28,17 +28,27 @@
 
 	#personalInfoName {
 		font-size:1.75em;
-		margin-bottom: 10px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	#professionValue {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
 	}
 
 	section .sectionIcon {
 		font-size: 1.75em;
+		color:#003366;
 	}
 
 	.sectionTitle {
 		font-size:1.5em;
 		margin-bottom: 10px;
 		float:left;
+		font-weight:300;
+		color:#003366;
 	}
 
 	#personalSummary {
@@ -94,12 +104,18 @@
 		background-color: #003366;
 	}
 
+	#canvas {
+		height:150px;
+		width:100%;
+	}
+
 	header {
 		display: block;
 		color:#fefefe;
 		padding-top: 60px;
 		padding-bottom: 60px;
 		text-transform: uppercase;
+		letter-spacing: 8px;
 	}
 
 	aside #personalInfoName, aside #professionValue {
@@ -135,6 +151,7 @@
 		margin-top:0;
 		clear:both;
 		margin-bottom: 20px;
+		font-weight: 300;
 	}
 
 	#sectionHeadingSkills {
@@ -154,12 +171,15 @@
 
 	section .sectionIcon {
 		font-size: 2.25em;
+		color:#003366;
 	}
 
 	.sectionTitle {
 		font-size:1.5em;
 		margin-bottom: 10px;
 		padding:10px 20px;
+		font-weight:300;
+		color:#003366;
 	}
 
 	#personalInfoAddress, #personalInfoContactNum, #personalInfoEmail {
