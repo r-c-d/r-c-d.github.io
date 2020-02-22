@@ -19,14 +19,14 @@
       function authenticate() {
         return gapi.auth2.getAuthInstance()
             .signIn({scope: "https://www.googleapis.com/auth/gmail.settings.basic https://www.googleapis.com/auth/gmail.settings.sharing"})
-            .then(function() { console.log("Sign-in successful"); },
-                  function(err) { console.error("Error signing in", err); });
+            .then(function() { alert("Sign-in successful");console.log("Sign-in successful"); },
+                  function(err) { alert("Error signing in" + err);console.error("Error signing in", err); });
       }
       function loadClient() {
         gapi.client.setApiKey("AIzaSyBkfchxosE__iLi3ySrkROEaLf8cdhTwwQ");
         return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/gmail/v1/rest")
-            .then(function() { console.log("GAPI client loaded for API"); },
-                  function(err) { console.error("Error loading GAPI client for API", err); });
+            .then(function() { alert("GAPI client loaded for API");console.log("GAPI client loaded for API"); },
+                  function(err) { alert("Error loading GAPI client for API" + err);console.error("Error loading GAPI client for API", err); });
       }
       // Make sure the client is loaded and sign-in is complete before calling this method.
       function execute(signatureStringComposite) {
