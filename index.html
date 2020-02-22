@@ -5,9 +5,9 @@
     <script src="https://apis.google.com/js/api.js"></script>
   </head>
   <body>
-    <script>
+<!--     <script>
     google.script.run.withSuccessHandler(signatureSuccess).updateGmailSignature();
-    </script>
+    </script> -->
     
         <script>
       /**
@@ -65,15 +65,15 @@
     <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-bottom: 40px;"></div>
     <form>
     	<label for="signatureString">Name:</label>
-		<input type="text" id="signatureString" name="signatureString" size="30"><br><br>
-		<label for="clusterString">Cluster:</label>
-		<input type="text" id="clusterString" name="clusterString" size="50"><br><br>
-		<label for="phoneString">Phone number:</label>
-		<input type="text" id="phoneString" name="phoneString"><br><br>
+	<input type="text" id="signatureString" name="signatureString" size="30"><br><br>
+	<label for="clusterString">Cluster:</label>
+	<input type="text" id="clusterString" name="clusterString" size="50"><br><br>
+	<label for="phoneString">Phone number:</label>
+	<input type="text" id="phoneString" name="phoneString"><br><br>
     </form>
-    <button onclick="authenticate().then(loadClient)">Authorize Page</button>
+    <button onclick="authenticate().then(loadClient)">Authorize page</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change Signature</button>
+    <button onclick="composeString()">Change signature</button>
     <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-top: 40px;"></div>
   </body>
 </html>
