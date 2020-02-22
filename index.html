@@ -4,7 +4,7 @@
     <base target="_top">
     <script src="https://apis.google.com/js/api.js"></script>
   </head>
-  <body onload="authenticate()">
+  <body>
     <script>
     google.script.run.withSuccessHandler(signatureSuccess).updateGmailSignature();
     </script>
@@ -71,9 +71,9 @@
 		<label for="phoneString">Phone number:</label>
 		<input type="text" id="phoneString" name="phoneString"><br><br>
     </form>
-    <button onclick="authenticate().then(loadClient)">Authorize page</button>
+    <button onclick="authenticate().then(loadClient)">Authorize Page</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change signature</button>
+    <button onclick="composeString()">Change Signature</button>
     <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-top: 40px;"></div>
   </body>
 </html>
