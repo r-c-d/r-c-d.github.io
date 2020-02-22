@@ -48,7 +48,7 @@
       });
 
       function composeString() {
-    	var signatureStringComposite = "<html><div><div style='float:left;background-image: url(https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg);background-position: center;background-size: contain;width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;'><div style='font-size:.90em;'>" + document.getElementById(signatureString).value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById(clusterString).value + "</div><div style='font-size:.75em;'>" + document.getElementById(phoneString).value + "</div></div></div> + "</html>"
+    	var signatureStringComposite = "<html><div><div style='float:left;background-image: url('https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg');background-position: center;background-size: contain;width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;'><div style='font-size:.90em;'>" + document.getElementById(signatureString).value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById(clusterString).value + "</div><div style='font-size:.75em;'>" + document.getElementById(phoneString).value + "</div></div></div> + "</html>"
     	execute(signatureStringComposite);
       }
     </script>
@@ -62,6 +62,6 @@
     </form>
     <button onclick="authenticate().then(loadClient)">Authorize and Load</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change signature</button>
+    <button onclick="composeString()">Change Signature</button>
   </body>
 </html>
