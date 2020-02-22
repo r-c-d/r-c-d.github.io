@@ -48,19 +48,21 @@
       });
 
       function composeString() {
-    	// var signatureStringComposite = "<html><div>
-    	// <div style='width:98px;height:58px;'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg'></div>
-    	// <div style='float:left;padding-left: 10px;'>
-    	// 	<div style='font-size:.90em;'>" + document.getElementById(signatureString).value + "</div>
-    	// 	<div style='font-size:.75em;'>International Rice Research Institute</div>
-    	// 	<div style='font-size:.75em;'>" + document.getElementById(clusterString).value + "</div>
-    	// 	<div style='font-size:.75em;'>" + document.getElementById(phoneString).value + "</div>
-    	// </div>
-    	// </div></html>"
-    	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
-    	execute(signatureStringComposite);
+      	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
+      	execute(signatureStringComposite);
       }
     </script>
+    <h1>Gmail Signature Changer (Closed ALPHA)</h1>
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Click on &quot;Authorize page&quot; button</li>
+      <li>Enter information in textboxes</li>
+      <li>Click on &quot;Change signature&quot; button</li>
+    </ol>
+    <h3>Note:</h3>
+    <p>If you already have your Gmail open in your browser, you will need to refresh the page and create a new email to see your new signature.</p>
+    <br><br>
+    <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-bottom: 40px;"></div>
     <form>
     	<label for="signatureString">Name:</label>
 		<input type="text" id="signatureString" name="signatureString" size="30"><br><br>
@@ -72,5 +74,6 @@
     <button onclick="authenticate().then(loadClient)">Authorize page</button>
     <!-- <button onclick="execute()">Execute</button> -->
     <button onclick="composeString()">Change signature</button>
+    <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-top: 40px;"></div>
   </body>
 </html>
