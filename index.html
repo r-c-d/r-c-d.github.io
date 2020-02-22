@@ -57,7 +57,7 @@
     	// 	<div style='font-size:.75em;'>" + document.getElementById(phoneString).value + "</div>
     	// </div>
     	// </div></html>"
-    	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>Ralph C. Delfin</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>Management Information System</div><div style='font-size:.75em;'>2606</div></div></div></html>"
+    	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
     	execute(signatureStringComposite);
       }
     </script>
@@ -69,8 +69,8 @@
 		<label for="phoneString">Phone number:</label>
 		<input type="text" id="phoneString" name="phoneString"><br><br>
     </form>
-    <button onclick="authenticate().then(loadClient)">Authorize Page</button>
+    <button onclick="authenticate().then(loadClient)">Authorize page</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change Signature</button>
+    <button onclick="composeString()">Change signature</button>
   </body>
 </html>
