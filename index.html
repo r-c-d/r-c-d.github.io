@@ -48,11 +48,11 @@
       });
 
       function composeString() {
-      	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='https://www.irri.org/sites/all/themes/custom/irri/images/IRRI-logo.svg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
+      	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyODQxLjYgMTc2OS4xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyODQxLjYgMTc2OS4xOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAzODU0Mjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIwMjMuMiw4NDkuOWMyMC41LTQyLDI0LjYtMTE2LjksMTAuNi0xNzUuOGMtMTcuMy03My4xLTc5LjEtMTAzLjEtMTE5LjYtMTE3LjMKCQljLTYzLjItMjItMjI5LjYtMy44LTIyMC43LDEzMC45djIyMS41aDEyMy4xYzIuMywwLjEsMTAwLjctMC40LDEyMy45LTZDMTk2Mi42LDg5Ny45LDIwMDYuOSw4ODMuMiwyMDIzLjIsODQ5Ljl6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMCwwdjE3NjkuMWgyODQxLjZWMEgweiBNMjY0My4xLDEzMjAuNGgtMzIzLjdoLTE2My45YzEuOSwwLTkwLjItOTYuNC0zMTAuNy0yODEKCQljLTYwLjEtNTAuMy0xMTkuNC02MS43LTEzMi43LTYxLjJoLTE4LjR2MjM1LjRjMCwzOS40LDM3LjIsNzEsNzAuNyw3MWg0NS45djM1LjloLTQ5NC45Yy0yNy0yNi02MC41LTU5LjQtOTEuNy04OC43CgkJYy03OC4zLTczLjktMTU2LjktMTQzLjQtMjM4LjYtMjA5LjljLTQyLjktMzQuOS04NS44LTQyLjgtMTAzLjUtNDMuNWwtMjQuMi0wLjF2MjMyYzAsNDYuMiwzOC45LDc0LjMsNzMuNiw3NC4zaDQwLjVsLTAuNSwzNS45CgkJSDIwNy44bDAuMi0zNS45SDI1MGM0My41LDAsNzQuNC0zMy44LDc0LjQtNzEuM2wwLjEtNTk2LjNjMC0zMi4zLTI0LjgtNzIuMi03NC41LTcyLjJIMjA4di0zNS43aDM3MC4yVjU0NWgtNDYuNgoJCWMtNDcuMSwwLTcyLjUsNDAuMy03Mi41LDcxLjhsMC4zLDU4NC40YzAsNjUuNSw1NS4yLDgzLjUsMTA1LjUsODMuNWMwLjIsMCwyNy4yLDAsNDMuNCwwYzYzLjMsMCwxMTEuOS0yMy42LDExMS45LTgzLjVWNjA0LjYKCQljMC0yOS42LTI0LjQtNTkuNi03OC42LTU5LjZoLTM3bDAuMS0zNmg0NzEuN2M2Mi41LDAsMzAwLTEuNSwzMDAsMjU0LjRjMCwyMTUuNy0yNDMuNywyMDkuNS0yNjUuOCwyMTEuOAoJCWMyNi42LDguNiw1MSwyMi44LDczLjQsNDMuMmM1Ny4yLDUyLjEsMTQzLjMsMTMzLjgsMjE2LjMsMjA2LjFjOS44LDkuNyw1MS44LDU3LjgsMTAzLjIsNTguMWMyNy4zLDAuMiw1Ni44LTMyLjgsNTYuOC02OS44di01OTUKCQljMC00MS43LTMyLjItNzIuOS03NC45LTcyLjloLTQyLjR2LTM1LjloNTAyLjFjMTEzLjEsMCwyMjEuNCw1My41LDI1Mi42LDEzNWMyMi4xLDU4LjEsNTQuOSwyNTUuMi0xMjQuMiwzMTIuMgoJCWMtNDAuOCwxMy0xMTkuNCwyMC41LTEyMi44LDIyYzI1LjcsMTAuNyw1MC4xLDIwLjYsNzQuMSw0MS4yYzcwLjksNjAuOSwxOTMuNiwxOTYuMSwyNDEuOSwyMjljNDAuMywyNy41LDEyMi42LDY4LjYsMTIyLjYtMzEuOQoJCVY2MjAuNmMwLTQzLjgtMzEuMy03NS42LTczLjYtNzUuNmgtNDIuOXYtMzYuMWgzNzAuM1Y1NDVoLTQ2Yy00NSwwLTczLjEsMzguNy03My4xLDcwLjRsMC40LDYwMS43YzAsMjguNCwyNy4xLDY3LjcsNzQuMyw2Ny43CgkJYzE2LjUsMCw0NC41LDAsNDQuNSwwTDI2NDMuMSwxMzIwLjRMMjY0My4xLDEzMjAuNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMTg2LjksODQ5LjljMjAuNS00MiwyNC42LTExNi45LDEwLjYtMTc1LjhjLTE3LjMtNzMuMS03OS4xLTEwMy4xLTExOS42LTExNy4zCgkJYy02My4yLTIyLTIyOS4zLTMuNC0yMjAuNCwxMzEuMnYyMjEuNmwxMjIuOS0wLjVjMi4zLDAuMSwxMDAuNy0wLjQsMTIzLjgtNkMxMTI2LjIsODk3LjksMTE3MC41LDg4My4yLDExODYuOSw4NDkuOXoiLz4KPC9nPgo8L3N2Zz4K' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
       	execute(signatureStringComposite);
       }
     </script>
-    <h1>Gmail Signature Changer (Closed ALPHA)</h1>
+    <h1>Gmail Signature Changer (Closed-ALPHA)</h1>
     <h3>Instructions:</h3>
     <ol>
       <li>Click on &quot;Authorize page&quot; button</li>
@@ -71,9 +71,9 @@
 		<label for="phoneString">Phone number:</label>
 		<input type="text" id="phoneString" name="phoneString"><br><br>
     </form>
-    <button onclick="authenticate().then(loadClient)">Authorize Page</button>
+    <button onclick="authenticate().then(loadClient)">Authorize page</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change Signature</button>
+    <button onclick="composeString()">Change signature</button>
     <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-top: 40px;"></div>
   </body>
 </html>
