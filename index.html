@@ -4,7 +4,7 @@
     <base target="_top">
     <script src="https://apis.google.com/js/api.js"></script>
   </head>
-  <body>
+  <body onload="authenticate()">
     <script>
     google.script.run.withSuccessHandler(signatureSuccess).updateGmailSignature();
     </script>
@@ -29,12 +29,13 @@
                   function(err) { console.error("Error loading GAPI client for API", err); });
       }
       // Make sure the client is loaded and sign-in is complete before calling this method.
-      function execute() {
+      function execute(signatureStringComposite) {
+      	var signatureStringComposite = signatureStringComposite;
         return gapi.client.gmail.users.settings.sendAs.update({
           "userId": "r.c.delfin@irri.org",
           "sendAsEmail": "r.c.delfin@irri.org",
           "resource": {
-            "signature": "<html><span style='font-size:1.5em;font-weight:700;color:#4b8b3b'>The International Rice Research Institute</span></html>"
+            "signature": signatureStringComposite //"International Rice Research Institute"
           }
         })
             .then(function(response) {
@@ -46,8 +47,22 @@
       gapi.load("client:auth2", function() {
         gapi.auth2.init({client_id: "314753837019-esvn5pl4us923j77oc778o8e1n89t2r6.apps.googleusercontent.com"});
       });
+
+      function composeString() {
+    	var signatureStringComposite = "<html>" + document.getElementById("signatureString").value + "<br>International Rice Research Institute<br>" +  document.getElementById("clusterString").value + "<br>"  document.getElementById("phoneString").value + "</html>"
+    	execute(signatureStringComposite);
+      }
     </script>
-    <button onclick="authenticate().then(loadClient)">Authorize and Load</button>
-    <button onclick="execute()">Execute</button>
+    <form action="composeString()">
+    	<label for="signatureString">Name:</label>
+		<input type="text" id="signatureString" name="signatureString" size="30"><br><br>
+		<label for="clusterString">Cluster:</label>
+		<input type="text" id="clusterString" name="clusterString" size="50"><br><br>
+		<label for="phoneString">Phone number:</label>
+		<input type="text" id="phoneString" name="phoneString"><br><br>
+    </form>
+    <button onclick="authenticate().then(loadClient)">Authorize and load</button>
+    <!-- <button onclick="execute()">Execute</button> -->
+    <button onclick="composeString()">change signature</button>
   </body>
 </html>
