@@ -48,11 +48,11 @@
       });
 
       function composeString() {
-      	var signatureStringComposite = "<html><div><div style='width:98px;height:58px;float:left'><img src='https://storage.googleapis.com/whitesands/irri-logo.jpg' style='width:98px;height:58px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
+      	var signatureStringComposite = "<html><div><div style='width:99px;height:80px;float:left'><img src='https://storage.googleapis.com/whitesands/irri-logo.jpg' style='width:99px;height:80px;'></div><div style='float:left;padding-left: 10px;width:300px;'><div style='font-size:.90em;'>" + document.getElementById("signatureString").value + "</div><div style='font-size:.75em;'>International Rice Research Institute</div><div style='font-size:.75em;'>" + document.getElementById("clusterString").value + "</div><div style='font-size:.75em;'>" + document.getElementById("phoneString").value + "</div></div></div></html>"
       	execute(signatureStringComposite);
       }
     </script>
-    <h1>Gmail Signature Changer (-Closed ALPHA-)</h1>
+    <h1>Gmail Signature Changer (Closed ALPHA)</h1>
     <h3>Instructions:</h3>
     <ol>
       <li>Click on &quot;Authorize page&quot; button</li>
@@ -71,9 +71,9 @@
 		<label for="phoneString">Phone number:</label>
 		<input type="text" id="phoneString" name="phoneString"><br><br>
     </form>
-    <button onclick="authenticate().then(loadClient)">Authorize page</button>
+    <button onclick="authenticate().then(loadClient)">Authorize Page</button>
     <!-- <button onclick="execute()">Execute</button> -->
-    <button onclick="composeString()">Change signature</button>
+    <button onclick="composeString()">Change Signature</button>
     <div style="max-width:600px;height:1px;border-top: 1px solid #acacac;margin-top: 40px;"></div>
   </body>
 </html>
